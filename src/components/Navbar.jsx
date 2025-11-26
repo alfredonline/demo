@@ -4,7 +4,6 @@ export default function Navbar() {
     return (
         <nav className="flex items-center justify-between px-6 py-4 bg-white shadow-md">
             <div className="flex items-center gap-2">
-                <img src="/file.svg" alt="Airbnb Logo" className="h-8 w-8" />
                 <span className="font-bold text-xl text-red-500">Airbnb</span>
             </div>
             <div className="flex gap-6 text-gray-700">

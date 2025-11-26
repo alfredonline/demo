@@ -21,7 +21,10 @@ export default function AddForm() {
 
     const localStorageTodos = localStorage.getItem("todos")
 
-    todoObject.id = Date.now().toString()
+    setTodoObject({
+        ...todoObject,
+        id: Date.now().toString()
+    })
 
     if (localStorageTodos) {
         localStorage.setItem("todos", JSON.stringify([...JSON.parse(localStorageTodos), todoObject]))
